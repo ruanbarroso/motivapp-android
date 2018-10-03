@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">MotivApp</string>
+
+    <!-- LoginActivity -->
+    <string name="login_email">E-mail</string>
+    <string name="login_password">Senha</string>
+    <string name="login_login">Entrar</string>
+    <string name="login_loading">Autenticando…</string>
+    <string name="login_register">Cadastrar</string>
+
+    <!-- RegisterActivity -->
+    <string name="register_message">Para registrar, informe os dados abaixo, por favor</string>
+    <string name="register_name">Nome</string>
+    <string name="register_empty_name">É necessário preencher o seu nome para registrar</string>
+    <string name="register_email">E-mail</string>
+    <string name="register_empty_email">É necessário preencher o seu e-mail para registrar</string>
+    <string name="register_password">Senha</string>
+    <string name="register_empty_password">É necessário preencher a sua senha para registrar</string>
+    <string name="register_register">Registrar</string>
+    <string name="register_loading">Aguarde enquanto fazemos o registro…</string>
+    <string name="register_error">Ocorreu um erro ao registrar</string>
+
+    <!-- TrainingsActivity -->
+    <string name="trainings_trainings">Treinos</string>
+    <string name="trainings_search">Buscar</string>
+
+    <!-- NewTrainingActivity -->
+    <string name="new_training_training">Novo treino</string>
+    <string name="new_training_title">Título</string>
+    <string name="new_training_loading">Carregando os títulos…</string>
+    <string name="new_training_no_titles">Não há títulos disponíveis</string>
+    <string name="new_training_description">Descrição</string>
+    <string name="new_training_image">Imagem</string>
+    <string name="new_training_save">Salvar</string>>
+
+</resources>
