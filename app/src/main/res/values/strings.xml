@@ -24,6 +24,7 @@
     <!-- TrainingsActivity -->
     <string name="trainings_trainings">Treinos</string>
     <string name="trainings_search">Buscar</string>
+    <string name="trainings_loading">Carregando os treinos…</string>
 
     <!-- NewTrainingActivity -->
     <string name="new_training_training">Novo treino</string>

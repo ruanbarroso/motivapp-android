@@ -30,10 +30,11 @@ class TrainingsActivity : AppCompatActivity() {
 
         //region <! Carregando a lista de treinos !>
         ui.trainingsListView.adapter = TrainingAdapter(this, trainings)
-        indeterminateProgressDialog("") {
+        indeterminateProgressDialog(R.string.trainings_loading) {
             setCancelable(false)
             setOnShowListener { _ ->
                 FirebaseFirestore.getInstance().collection("trainings").get().addOnCompleteListener { task ->
+                    dismiss()
                     if (!task.isSuccessful) {
                         alert(task.exception?.message ?: getString(R.string.register_error)) {
                             isCancelable = false
@@ -44,11 +45,6 @@ class TrainingsActivity : AppCompatActivity() {
                         return@addOnCompleteListener
                     }
                     if (task.result.isEmpty) {
-                        alert(R.string.new_training_no_titles) {
-                            isCancelable = false
-                            okButton {
-                            }
-                        }.show()
                         return@addOnCompleteListener
                     }
                 }
